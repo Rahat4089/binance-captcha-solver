@@ -1,11 +1,4 @@
-#https://github.com/glizzykingdreko/Datadome-GeeTest-Captcha-Solver/blob/main/solver.py
-"""
-MIT LICENSE
 
-Big thanks to glizzykingdreko for making this amazing solver
-
-i modified it
-"""
 import numpy as np
 import requests, cv2
 
