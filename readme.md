@@ -24,30 +24,9 @@ print(token)
 
 ---
 
-## Article
-
-[here](https://blog.castle.io/what-a-binance-captcha-solver-tells-us-about-todays-bot-threats/) is an article i found about my repository. 
-Not everything said there is true, but it's great if you don't understand my code.
-
----
 
 ## License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## Star History
-
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=xKiian/binance-captcha-solver&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=xKiian/binance-captcha-solver&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=xKiian/binance-captcha-solver&type=Date" />
- </picture>
-
----
-
-## Disclaimer
-
-This package is **unofficial** and not affiliated with **Binance© 2025**. Use it responsibly
-and in accordance with their terms of service. Feel free to contact me if you want this taken down.
