@@ -8,8 +8,8 @@ from json import dumps
 
 class BinanceCaptcha:
     def __init__(self,
-                 security_check_response_validate_id: str = "",  # from precheck request
-                 biz_id: str = "register",  # from precheck request
+                 security_check_response_validate_id: str = "",
+                 biz_id: str = "register", 
                  user_agent: str = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
                  ):
         self.session = requests.Session(
@@ -37,7 +37,7 @@ class BinanceCaptcha:
         self.security_check_response_validate_id = security_check_response_validate_id
         self.biz_id = biz_id
         self.device = Fingerprint(self.user_agent)
-        self.sv = "20220906"  # probably static
+        self.sv = "20220906" 
 
     def _get_captcha(self) -> dict:
         payload = {
@@ -60,7 +60,6 @@ class BinanceCaptcha:
             'origin': 'https://accounts.binance.com',
             'pragma': 'no-cache',
             'priority': 'u=1, i',
-            # 'sec-ch-ua': '"Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"',
             'sec-ch-ua-mobile': '?0',
             'sec-ch-ua-platform': '"Windows"',
             'sec-fetch-dest': 'empty',
@@ -89,7 +88,7 @@ class BinanceCaptcha:
             'clientType': 'web',
             'data': data_encrypted,
             's': BinanceCrypto.calculate_s(
-                self.biz_id + captcha_data["sig"] + data_encrypted + captcha_data.get("salt", "")), # they don't even check this
+                self.biz_id + captcha_data["sig"] + data_encrypted + captcha_data.get("salt", "")), 
             'sig': captcha_data["sig"],
         }
 
