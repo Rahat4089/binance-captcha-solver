@@ -2,12 +2,8 @@ from random import randint, uniform, randrange
 from math import hypot
 from time import time
 
-"""
-I initially wanted to make a solver for type IMAGE, but my python version always gets type SLIDE lmfao
-"""
-
 TILE_SIZE = 110
-TILES = {  # "pos" is top left position
+TILES = {
     0: {"id": "10", "pos": (145, 311)},
     1: {"id": "11", "pos": (259, 311)},
     2: {"id": "12", "pos": (373, 311)},
@@ -20,7 +16,7 @@ TILES = {  # "pos" is top left position
     7: {"id": "17", "pos": (259, 539)},
     8: {"id": "18", "pos": (373, 539)},
 
-    # verify/next button
+    
     "vb": {"id": "vb", "pos": (355, 673), "size": (127 - 2, 40 - 2)},
 }
 
@@ -170,7 +166,7 @@ class MouseMovement:
                 self.mm_count += 1
                 self.mu_count += 1
 
-        self.mm.pop()  # last click doesn't count somehow
+        self.mm.pop()
 
         return {
             "ec": {
